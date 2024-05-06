@@ -1,13 +1,13 @@
 * {
     padding: 0;
     margin: 0;
-    outline: #00FF00 solid 1px;
+    /*outline: #00FF00 solid 1px;*/
 }
 
 body {
     background-color: #0E0E0E;
     display: flex;
-    height: 100svh;
+    min-height: 100svh;
     max-width: 80rem;
     margin: 0 auto;
     justify-content: center;
@@ -18,8 +18,10 @@ body {
     display: flex;
 }
 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
+    margin-bottom: .5rem;
+    margin-top: 1rem;
 }
 .logo-side {
     background-image: url("img/jungle.png");
@@ -43,23 +45,59 @@ h2 {
     flex: 1.9 0 0;
     display: flex;
     flex-direction: column;
+
+}
+.left-spacing {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    gap: 0rem 3rem;
 }
 #moon-logo {
     height: 6rem;
     width: 6rem;
 }
 .content {
-
-    flex: 1 0 auto;
+    background-color: #f3f8fd;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 1rem;
+    flex: 1 0 0;
+    line-height: 2.0rem;
+    box-shadow: 0px 0px 3px #aebbcc;
 }
 .form-section {
     font-size: 1rem;
     font-weight: 400;
     display: flex;
-    flex: 1 0 auto;
+    padding-bottom: 1rem;
+    flex-direction: column;
+    flex: 1 0 0;
+    box-shadow: 0px 3px 3px #747e8a;
 }
 .create-account {
+    padding-top: 1rem;
+    background-color: #f3f8fd;
     font-size: 1rem;
     font-weight: 400;
-    flex: 1 0 auto;
+    flex: 1 0 0;
+    box-shadow: 0px -1px 3px #aebbcc;
+}
+.flex-column {
+    flex-direction: column;
+}
+.form-boxes {
+    flex-wrap: wrap;
+}
+input {
+    margin-bottom: 1rem;
+}
+#submit {
+    background-color: #596D48;
+    color: white;
+    font-size: 1.3rem;
+    width: 15rem;
+    height: 3rem;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
 }

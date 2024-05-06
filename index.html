@@ -12,27 +12,58 @@
 <body>
     <div class="logo-side">
         <div class ="flex-container banner">
-            <img href="" id="moon-logo"><div><h1>Etharialle</h1></div>
+            <div><img src="img/moon-logo.png" id="moon-logo"></div>
+            <div><h1>Etharialle</h1></div>
         </div>
     </div>
-    <div class="form-side">
+    <form class="form-side">
         <div class="content">
-            <h2>This is not a real online service! You know you need something 
+            <h2 class="left-spacing">This is not a real online service! You know you need something 
                 like this in your life to help you realize your deepest dreams.
                 Sign up <em>now</em> to get started.
             </h2>
-            <h2>You <em>know</em> you want to.</h2>
+            <h2 class="left-spacing">You <em>know</em> you want to.</h2>
         </div>
         <div class="form-section">
-            <form>
-                <h2>Let's do this!</h2>
-
-            </form>
+            <div class="left-spacing"><h2>Let's do this!</h2></div>
+            <div class="flex-container left-spacing form-boxes">
+                <div class="flex-container flex-column">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name">
+                </div>
+                <div class="flex-container flex-column ">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name">
+                </div>
+            </div>
+            <div class="flex-container left-spacing form-boxes">
+                <div class="flex-container flex-column">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email">
+                </div>
+                <div class="flex-container flex-column">
+                    <label for="phone-number">Phone Number:</label>
+                    <input type="text" id="phone-number" name="phone-number">
+                </div>
+            </div>
+            <div class="flex-container left-spacing form-boxes">
+                <div class="flex-container flex-column">
+                    <label for="password">Password:</label>
+                    <input type="text" id="password" name="password">
+                </div>
+                <div class="flex-container flex-column">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="text" id="confirm-password" name="confirm-password">
+                </div>
+            </div>
         </div>
         <div class="create-account">
-            <button>Create Account</button>
+            <div class="left-spacing">
+            <button id="submit">Create Account</button>
             <p>Already have an account? <a href="">Log in</a></p>
+            
+            </div>
         </div>
-    </div>
+    </form>
 </body>
 </html>
