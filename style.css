@@ -11,21 +11,55 @@ body {
     max-width: 80rem;
     margin: 0 auto;
     justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .flex-container {
     display: flex;
 }
-
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
 .logo-side {
     background-image: url("img/jungle.png");
     background-repeat: no-repeat;
     background-size: auto 100%;
     color: white;
-    flex: 1 0 auto;
+    flex: 1 0 0;
+    font-size: 4 rem;
+    font-family: "Paprika", Arial, Helvetica, sans-serif
 }
+.banner {
+    background-color: rgb(14, 14, 14, 65%);
+    justify-content: center;
+    align-items: center;
+    margin-top: 60%;
+}
+
 .form-side {
     background-color: white;
     color: #0E0E0E;
-    flex: 1.9 0 auto;
+    flex: 1.9 0 0;
+    display: flex;
+    flex-direction: column;
+}
+#moon-logo {
+    height: 6rem;
+    width: 6rem;
+}
+.content {
+
+    flex: 1 0 auto;
+}
+.form-section {
+    font-size: 1rem;
+    font-weight: 400;
+    display: flex;
+    flex: 1 0 auto;
+}
+.create-account {
+    font-size: 1rem;
+    font-weight: 400;
+    flex: 1 0 auto;
 }
