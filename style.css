@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: #00FF00 solid 1px;
+}
+
+body {
+    background-color: #0E0E0E;
+    display: flex;
+    height: 100svh;
+    max-width: 80rem;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.logo-side {
+    background-image: url("img/jungle.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    color: white;
+    flex: 1 0 auto;
+}
+.form-side {
+    background-color: white;
+    color: #0E0E0E;
+    flex: 1.9 0 auto;
+}
