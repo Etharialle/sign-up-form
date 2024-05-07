@@ -91,6 +91,8 @@ h2 {
 }
 input {
     margin-bottom: 1rem;
+    border-radius: .25rem;
+    border-color: #aebbcc;
 }
 #submit {
     background-color: #596D48;
@@ -101,8 +103,29 @@ input {
     border-radius: .5rem;
     margin-bottom: 2rem;
 }
-input[type=text]:focus {
-    outline: #596D48 solid 1px;
-    border: #596D48 solid 3px;
-    box-shadow: 1px 1px 3px #0088aa;
+#submit:active {
+    background-color: #343f2a;
+}
+input:focus {
+    outline: #0000FF solid 1px;
+    /*border: #596D48 solid 3px;*/
+    box-shadow: 2px 2px 3px #0088FF;
+}
+
+input:invalid {
+    
+    outline: #FF0000 solid 1px;
+    /*border: #596D48 solid 3px;*/
+    /*box-shadow: 2px 2px 3px #FF0000;*/
+}
+.invalid-input {
+    outline: #FF0000 solid 1px;
+}
+.valid-input {
+    outline: none;
+}
+#no-match {
+    font-size: .8rem;
+    color: red;
+    visibility: hidden;
 }

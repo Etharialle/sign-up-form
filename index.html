@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Paprika&display=swap" rel="stylesheet">
+    <script src="validation.js" defer></script>
     <title>Sign-up Form</title>
 </head>
 <body>
@@ -29,31 +30,32 @@
             <div class="flex-container left-spacing form-boxes">
                 <div class="flex-container flex-column">
                     <label for="first-name">First Name:</label>
-                    <input type="text" id="first-name" name="first-name">
+                    <input type="text" id="first-name" name="first-name" maxlength="30" placeholder="First" required>
                 </div>
                 <div class="flex-container flex-column ">
                     <label for="last-name">Last Name:</label>
-                    <input type="text" id="last-name" name="last-name">
+                    <input type="text" id="last-name" name="last-name" maxlength="30" placeholder="Last" required>
                 </div>
             </div>
             <div class="flex-container left-spacing form-boxes">
                 <div class="flex-container flex-column">
                     <label for="email">Email:</label>
-                    <input type="text" id="email" name="email">
+                    <input type="email" id="email" name="email" pattern=".+@.+\..+">
                 </div>
                 <div class="flex-container flex-column">
                     <label for="phone-number">Phone Number:</label>
-                    <input type="text" id="phone-number" name="phone-number">
+                    <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000">
                 </div>
             </div>
             <div class="flex-container left-spacing form-boxes">
                 <div class="flex-container flex-column">
                     <label for="password">Password:</label>
-                    <input type="text" id="password" name="password">
+                    <input type="password" id="password" name="password" required>
+                    <p id="no-match">*passwords do not match</p>
                 </div>
                 <div class="flex-container flex-column">
                     <label for="confirm-password">Confirm Password:</label>
-                    <input type="text" id="confirm-password" name="confirm-password">
+                    <input type="password" id="confirm-password" name="confirm-password" required>
                 </div>
             </div>
         </div>
